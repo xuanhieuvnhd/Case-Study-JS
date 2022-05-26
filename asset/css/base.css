@@ -1,0 +1,77 @@
+/* Đặt biến dùng chung, màu chữ, màu chủ đề... */
+:root {
+    --text-color: #222;
+    --primary-color: #27ae60;
+}
+
+/* Font chữ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+/* 12 columns */
+.grid {
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 22.5%;
+    margin: 1.25%;
+}
+
+.item {
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    user-select: none;
+    padding-bottom: 10px;
+}
+
+.item:hover {
+    position: relative;
+    top: -4px;
+    outline: var(--primary-color) 1px solid;
+}
+
+.btn {
+    border: none;
+    background-color: var(--primary-color);
+    padding: 8px 12px;
+    border-radius: 3px;
+    margin-left: 4px;
+    color: #fafafa;
+}
+
+.btn:hover {
+    background-color: #11ca6b;
+    cursor: pointer;
+}

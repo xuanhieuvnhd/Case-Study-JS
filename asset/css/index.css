@@ -1,0 +1,278 @@
+.best-sellers {
+    display: flex;
+    margin: 40px auto 0;
+    flex-wrap: wrap;
+}
+
+.best-sellers .item:first-child h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+    word-spacing: 4px;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+.best-sellers .item:first-child small {
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    font-family: serif;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.best-sellers .item:first-child p {
+    font-size: 12px;
+    color: #6e6e6e;
+    font-weight: 600;
+    line-height: 14px;
+    padding-top: 14px;
+}
+
+.best-sellers .item:first-child {
+    cursor: default;
+    padding: 10px;
+    box-shadow: none;
+}
+
+.best-sellers .item:first-child:hover {
+    top: 0;
+    outline: none;
+}
+
+.item-img {
+    /* Tỷ lệ tương đối với thẻ chứa nó padding: 100% 
+    hiểu là bằng chiều ngang của thẻ chứa nó */
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.item-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 10px 6px;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.item-btn-wrap {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-add-cart {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.btn-add-cart i {
+    font-size: 13px;
+    margin-right: 12px;
+}
+
+.item-price {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+/* Thanh policy */
+.policy {
+    display: flex;
+    width: 100%;
+    background: #f5f6f9;
+    height: 125px;
+    margin-top: 60px;
+}
+
+.policy-label {
+    text-align: center;
+    padding-top: 30px;
+    border-right: 1px solid #fff;
+    flex-grow: 1;
+}
+
+.policy-label i {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.policy-label span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.policy-label small {
+    font-size: 11px;
+    color: #888888;
+    font-weight: 600;
+}
+
+/* Featured products */
+.feature-product .heading {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.heading h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+    font-size: 22px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
+
+.heading small {
+    font-size: 13px;
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.content-product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* Newsletter subscrible */
+.newsletter {
+    margin-top: 60px;
+    text-align: center;
+    background: #313345;
+    padding: 20px 20px 40px;
+    color: #fafafa;
+}
+
+.newsletter p {
+    color: #eee;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+#email_newsletter {
+    width: 50%;
+    font-size: 12px;
+    padding-left: 15px;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-subs-btn {
+    width: 8rem;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: #26a061;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #eee;
+    text-align: center;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-subs-btn:hover {
+    background-color: #11ca6b;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .item {
+        width: 31.5%;
+        margin: 0 0.4rem 0.7rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .best-sellers {
+        flex-wrap: wrap;
+        margin: 2.5em auto 0;
+        width: 100%;
+    }
+
+    .best-sellers .item:first-child {
+        width: 100%;
+        text-align: center;
+        padding: 0 2rem;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .best-sellers .item:first-child h2 {
+        font-size: 21px;
+        padding-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    .best-sellers .item:first-child p {
+        padding-top: 0.6rem;
+    }
+
+    .item {
+        width: 48%;
+        margin: 0 1% 12px;
+    }
+
+    .policy {
+        margin-top: 2.5em;
+        flex-wrap: wrap;
+        min-height: 300px;
+    }
+
+    .policy-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 25px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .policy-label small {
+        margin-top: 0.3rem;
+    }
+}
+
+
+@media screen and (max-width: 568px){
+    .item {
+        width: 98%;
+    }
+    
+    .policy-label {
+        width: 100%;
+        border-right: none;
+    }
+
+    .policy{
+        height: fit-content;
+        justify-content: center;
+    }
+}
+
+
+
